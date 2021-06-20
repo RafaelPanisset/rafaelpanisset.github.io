@@ -21,8 +21,9 @@
                   <label for="rg">RG:</label>
                   <input type="text" name="rg" id="rg"><br><br>
                   <label for="cpf">CPF:</label>
-                  <input type="text" name="rg" id="rg" size="10"> - <input type="text" name="rg" id="rg" size="4">
-                </fieldset><br>
+                  <input type="text" name="cpf" id="cpf" size="10"> - <input type="text" name="cpf" id="cpf" size="4">
+                </fieldset><br><br>
+
                 <fieldset>
                     <legend>Dados de Endereço:</legend>
                     <label for="rua">Rua: </label>
@@ -31,14 +32,22 @@
                     <input type="text" name="numero" id="numero" size="4"><br><br>
                     <label for="bairro">Bairro:</label>
                     <input type="text" name="bairro" id="bairro"><br><br>
-                    <label for="rg">Estado:</label>
-                    <input type="text" name="rg" id="rg"><br><br>
+                    <label for="estado">Estado: </label>
+                    <select name="estado">
+                      <option value="acre">Acre</option>
+                      <option value="minas">Minas Gerais</option>
+                      <option value=">espirito santo">Espírito Santo</option>
+                      <option value="sao paulo">São Paulo</option>
+                      <option value="Rio De Janeiro">Rio De Janeiro</option>
+                      <option value="Outros">Outros</option>
+                    </select><br/><br>
                     <label for="rg">Cidade:</label>
                     <input type="text" name="cidade" id="cidade"><br><br>
                     <label for="cep">CEP:</label>
-                    <input type="text" name="cep" id="cep" size="10"> - <input type="text" name="cpf" id="cpf" size="4">
-                  </fieldset>
-                  <fieldset>
+                    <input type="text" name="cep" id="cep" size="10"> - <input type="text" name="cep" id="cep" size="4">
+                </fieldset><br><br>
+
+                <fieldset>
                     <legend>Dados de Login:</legend>
                     <label for="email">Email: </label>
                     <input type="email" name=”email” id=”email”><br><br>
@@ -50,36 +59,36 @@
                     <input type="password" name="senha" id="senha"><br><br>
                     <label for="senhaConfirme">Confirme a senha:</label>
                     <input type="password" name="senhaConfirme" id="senhaConfirme"><br><br>
-                  </fieldset>
-                  <fieldset>
+                </fieldset><br><br>
+
+                <fieldset>
                     <legend>Pesquisa de interesse:</legend>
                     <label for="Pesquisa">Você deseja trabalhar com Webmaster? </label><br>
                     <input type="radio" id="sim" name="trabalha" value="sim">
-                    <label for="female">Sim</label><br>
+                    <label for="sim">Sim</label><br>
                     <input type="radio" id="nao" name="trabalha" value="nao">
-                    <label for="female">Não</label><br>
+                    <label for="nao">Não</label><br>
                     <input type="radio" id="talvez" name="trabalha" value="talvez">
-                    <label for="female">Talvez</label><br>
+                    <label for="talvez">Talvez</label><br>
                     <input type="radio" id="quem_sabe" name="trabalha" value="quem_sabe">
-                    <label for="female">Quem sabe</label><br><br>
+                    <label for="quem_sabe">Quem sabe</label><br><br>
                     <label for="aprender">O que você deseja aprender? </label><br>
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <input type="checkbox" id="html" name="html" value="HTML">
                     <label for="vehicle1"> HTML</label><br>
-                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <input type="checkbox" id="css" name="css" value="CSS">
                     <label for="vehicle2">CSS</label><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <input type="checkbox" id="javascript" name="javascript" value="javascript">
                     <label for="vehicle3">JavaScript</label><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <input type="checkbox" id="django" name="django" value="django">
                     <label for="vehicle3">Django</label><br><br>
                     <legend>Deixe um comentário:</legend><br>
                     <textarea rows="10" cols="40" maxlength="500">
                     </textarea><br>
-                  </fieldset><br> 
+                </fieldset><br><br>
+
                   <input type="submit" value="Submit">   
                   <input type="reset" value="Limpar">  
-              </form>
-
-              
+              </form>       
         </div>    
     </body>
 </html>
