@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>     
+  </head>
+  <body>
+    <header class="container">
+        <div class="container primeiraDivHeader">
+            <div>
+            </div>
+            <div class="row">
+                <div>
+                    <a class="linkHeader" href="#">Home</a>
+                    <a class="linkHeader" href="#">Assine Já</a>
+                    <a class="linkHeader" href="#">Minha Conta</a>
+                    <a class="linkHeader" href="#">E-mail</a>
+                    <a class="linkHeader" href="#">Entrar</a>
+                    <a class="linkHeader">Texto: <i> <font size="2">A</font> <b>A</b> <b style=" background-color: #1f1c1c; color: #ffff;padding: 3px;">A</b></i></a> 
+                </div>                  
+            </div>
+        </div>
+    </header>
+    <nav class="container">  
+        <div class="container primeiraDivNav">
+            <div class="row">
+                <img class="imgLayout" src="cbf.jpeg" alt="Flowers in Chania">
+                <div class="imgTexto">  
+                    <div>
+                        <p>fdfsdsddfdfdfdfd fdfdfdfddsdsdsfdfd</p>
+                        <p>fdfsdsddfdfdfdfd fdfdfdfddsdsdsfdfd</p> 
+                        <p>fdfsdsddfdfdfdfd fdfdfdfddsdsdsfdfd</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="navRowDivisao">
+               <div class="navColunaDivisao">
+                   <div>
+
+                   </div>
+                   <div class="container buscarGrid">
+                        <div class="buscarEsporte">
+                            Buscar esportes
+                        </div>
+                        <div class="BuscarSearch">
+                            <input style="margin-top: -2px; border-block-color: inherit;height: 29px;" type="search" id="gsearch" name="gsearch">
+                            <input style="background-color: #6f6b6b; height: 23px;" type="submit"><br>
+                            <a href="#"><i style="margin-left: 71px;">Busca avançada</i></a>
+                        </div>
+                   </div>
+               </div>
+               <div class="opcoes">
+                    <p class="borderParagrafo">
+                        Futebol
+                    </p>
+                    <p class="borderParagrafo">
+                        Basquete
+                    </p>
+                    <p class="borderParagrafo">
+                        Voleibol
+                    </p>
+                    <p class="borderParagrafo">
+                        Futebol Americano
+                    </p>
+               </div> 
+            </div>
+        </div>
+    </nav>
+    <section> 
+                                fdsfdsfdsfdsfdsfdsgfgfg       
+    </section>
+    <footer class="container footerGrid">
+        <div>
+               fsdfsdf fdf
+        </div>
+        <div>
+            fsdfsdfsdfsd
+        </div>
+        <div>
+            fsfsdfsdfdsfd
+        </div>
+    </footer>
+  </body>
+</html>
+
+
+<style>
+
+.primeiraDivHeader {
+	display: grid;
+    grid-template-columns: 55%  50%;
+}
+
+
+.linkHeader {
+    padding: 12px;
+    border-right: 2px solid rgb(10, 10, 10);
+    display: inline-block;
+
+}
+
+.primeiraDivNav {
+    display: grid;
+    grid-template-columns: 30%  70%;
+}
+
+.imgLayout {
+    width: 205px;
+    height: 130px;
+    padding-left: 48px;
+}
+.imgTexto {
+    height: 130px;
+    margin-top: -10px;
+    padding-left: 66px;
+    font-size: 10px;
+}
+
+.navRowDivisao {
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+
+.navColunaDivisao {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.buscarEsporte {
+    border-style: solid;
+    border-width: thin;
+    background-color: #d8d3d3;
+    box-shadow: 1px 3px;
+    width: 104px;
+    margin-top: 23px;
+    padding: 3px;
+    height: 18px;
+}
+
+.buscarGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.BuscarSearch {
+    padding: 26px;
+    padding-left: -10px;
+    padding-right: 35px;
+    margin-left: -132px;
+    height: 16px;
+}
+
+.opcoes {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: -62px;
+}
+
+.borderParagrafo {
+    font-family: cursive;
+    border-style: solid;
+    border-width: thin;
+    height: 22px;
+    text-align: center;
+    border-width: medium;
+    width: 200px;
+}
+
+
+.footerGrid {
+    display: grid;
+    border-top: 1px solid rgb(15, 15, 15);
+    grid-template-columns: 45% 10% 45%;  
+}
+</style>
