@@ -4,8 +4,8 @@ var meses = dataDigitada.split("/")[1];
 var anos = dataDigitada.split("/")[2];
 var formatoAmericano = new Date(anos, meses, dias);
 hoje = new Date();
-diferenca = Math.floor(hoje.getTime() - varformatoAmericano.getTime());
-dia  = 1000 * 60 * 60 * 24;
+diferenca = Math.floor(hoje.getTime() - formatoAmericano.getTime());
+var dia  = 1000 * 60 * 60 * 24;
 
 dias = Math.floor(diferenca / dia);
 meses = Math.floor(dias / 31);
