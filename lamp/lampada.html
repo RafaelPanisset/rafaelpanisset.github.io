@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="imagem" onclick="trocar()" src="lampada_off.gif" style="margin-left: 566px;
+margin-top: 100px;">
+
+<script>
+function trocar() {
+  var image = document.getElementById('imagem');
+  if (image.src.match("on")) {
+    image.src = "lampada_off.gif";
+  } else {
+    image.src = "lampada_on.gif";
+  }
+}
+</script>
+
+</body>
+</html>
