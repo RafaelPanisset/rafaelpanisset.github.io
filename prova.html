@@ -1,1 +1,86 @@
-dsds
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<form style="margin-left: 88px; margin-top: 25px;">
+    <label  for="nome">Digite o nome:</label><br>
+    <input type="text" id="nome_id" name="nome" value=""><br>
+
+    <label for="telefone">Digite o telefone:</label><br>
+    <input type="text" id="telefone_id" name="telefone" value=""><br><br>
+
+    <label for="chegada">Digite a data de chegada:</label><br>
+    <input type="date" id="data_chegada_id" name="chegada" value=""><br><br>
+
+    <label for="saida">Digite a data de saída:</label><br>
+    <input type="date" id="data_saida_id" name="saida" value=""><br><br>
+
+    <label for="crianca">Número de crianças:</label><br>
+    <input type="number" id="numero_crianca_id" name="crianca" value="" min="0" max="3"><br>
+
+    <p>Selecione um tipo de quarto:</p>
+    <div id="quarto">
+        <input type="radio" id="single_id" name="single" value="1">
+        <label for="single">Single(R$ 139)</label><br>
+        <input type="radio" id="double_id" name="double" value="2">
+        <label for="single">Double(R$ 220,00)</label><br>
+        <input type="radio" id="triplo_id" name="triplo" value="3">
+        <label for="single">Triplo(R$ 340,00)</label><br><br>
+    </div>  
+    <button onclick="calcularValor()">Calcular</button>
+</form> 
+
+<script>
+    function calcularValor() {
+        
+
+        var dataChegadaTemporaria = document.getElementById("data_chegada_id").value;  
+        var dataSaidaTemporaria = document.getElementById("data_saida_id").value;
+
+        //criar variável data para data de chegada
+        var ano1 = dataChegadaTemporaria.split("-")[0];
+        var mes1 = dataChegadaTemporaria.split("-")[1];
+        var dia1 = dataChegadaTemporaria.split("-")[2];  
+        var dataChegada =  new Date(mes1+"/"+dia1+"/"+ano1);
+
+        //criar variável data para data de saída
+        var ano2 = dataSaidaTemporaria.split("-")[0];
+        var mes2 = dataSaidaTemporaria.split("-")[1];
+        var dia2 = dataSaidaTemporaria.split("-")[2];
+        var dataSaida =  new Date(mes2+"/"+dia2+"/"+ano2);
+
+        //diferenca as duas datas
+        var dataDiferenca = dataSaida.getTime() - dataChegada.getTime();
+        //Calcular o número de dias entre elas
+        var numeroDeDias = dataDiferenca / (1000 * 3600 * 24);
+        var numeroDeCriancas = document.getElementById("numero_crianca_id").value;
+        var resposta;
+        if (document.getElementById('single_id').checked) {
+            resposta = numeroDeDias * 139 + numeroDeCriancas * 30;
+            alert("O valor gasto será " + resposta);
+        }
+        if (document.getElementById('double_id').checked) {
+           if (numeroDeCriancas <= 2) {
+                resposta = numeroDeDias * 220 + numeroDeCriancas * 30;
+                alert("O valor gasto será " + resposta);
+           }
+           else {
+               alert("O número de pessoas selecionadas excede o limite máximo de 4 pessoas!");
+           }
+        }
+        if (document.getElementById('triplo_id').checked) {
+            if (numeroDeCriancas <= 1) {
+                resposta = numeroDeDias * 340 + numeroDeCriancas * 30;
+                alert("O valor gasto será " + resposta);
+            }
+           else {
+               alert("O número de pessoas selecionadas excede o limite máximo de 4 pessoas!");
+           }
+        }        
+    }
+
+</script>
+
+</body>
+</html>
