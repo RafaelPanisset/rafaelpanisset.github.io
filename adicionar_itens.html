@@ -3,26 +3,27 @@
 <html>
 <head>
 <script>
-    var listaDeItems = [];
-
-    document.getElementById("adicionarALista").onclick = function () {
-        listaDeItems.push(adicionarALista.value);
-        updateDropList();
-        
+    
+    function criar() {
+        var valor = document.getElementById("valorDigitado").value;  
+        var ul = document.getElementById("list");
+        var li = document.createElement("li");
+        var children = ul.children.length + 1
+        li.setAttribute("id", valor)
+        li.appendChild(document.createTextNode(valor));
+        ul.appendChild(li)
     }
-
 </script>
 </head>
 
 <body>
     <div class ="row" margin-left="40px">
         <h2>Menu de Itens</h2>
-        <ul id="navButtons">
-            <li></li>
-        </ul>
-        <div id="">
-            <input id="" type="text">
-            <button id="adicionarALista">Adicionar item Menu</button>
+        <ul id="list">
+        </ul> 
+        <div>
+            <input id="valorDigitado" type="text" value="">
+            <button onclick="criar()">Adicionar item Menu</button>
         </div>
 
     </div>
