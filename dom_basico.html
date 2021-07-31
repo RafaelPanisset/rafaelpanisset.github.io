@@ -5,14 +5,14 @@
 <script>
    function mostrarDigito() {
         var x = document.getElementById("mostrar").value;
-        document.getElementById("digito").innerHTML =  x + ";.";
+        document.getElementById("digito").innerHTML =  '"' + x + '";.';
     }
 </script>
 </head>
 <body>
     <div class ="row" margin-left="40px">
         <input type="text"  id="mostrar" style="margin-left:65px;margin-top: 52px;" oninput="mostrarDigito()">
-        <p style="margin-left: 254px; margin-top: -18px;">Você digitou "</p><p id="digito" style="margin-left: 254px; margin-top: -18px;"></p><p  style="margin-left: 254px; margin-top: -18px;">"</p>
+        <p style="margin-left: 254px; margin-top: -18px;">Você digitou</p><p id="digito" style="margin-left: 348px; margin-top: -33px;"></p>
     </div>
 </body>
 </html>
